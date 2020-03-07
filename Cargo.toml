@@ -4,6 +4,19 @@ version = "0.1.0"
 authors = ["Boomber <boomberisalreadytaken@gmail.com>"]
 edition = "2018"
 
+description = "structure.nbt-to-mcfunction converter"
+
+readme = "README.md"
+homepage = "https://github.com/oOBoomberOo/ribosome"
+repository = "https://github.com/oOBoomberOo/ribosome"
+keywords = ["structure", "nbt", "mcfunction", "datapack", "multiblock"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "oOBoomberOo/ribosome", branch = "master" }
+maintenance = { status = "experimental" }
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
