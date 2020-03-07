@@ -15,7 +15,7 @@ fn main() {
 
 fn run() -> PResult<()> {
 	let matches = App::new("Ribosome")
-		.version("0.1.0")
+		.version("0.1.1")
 		.author("Boomber <boomberisalreadytaken@gmail.com>")
 		.about("Minecraft structure file to mcfunction converter")
 		.arg(
