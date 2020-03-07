@@ -1,4 +1,4 @@
-# Ribosome [![Build Status](https://travis-ci.com/oOBoomberOo/ribosome.svg?branch=master)](https://travis-ci.com/oOBoomberOo/ribosome)
+# Ribosome [![Crates.io](https://img.shields.io/crates/v/ribosome)](https://crates.io/crates/ribosome) [![Build Status](https://travis-ci.com/oOBoomberOo/ribosome.svg?branch=master)](https://travis-ci.com/oOBoomberOo/ribosome)
 
 ## About
 Ribosome is a command-line application that convert `structure.nbt` file into `mcfunction` file to help making multi-block detection system easier.  

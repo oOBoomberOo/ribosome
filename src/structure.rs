@@ -49,7 +49,7 @@ impl Structure {
 				continue;
 			}
 
-			let line = format!("execute if score {target} {objective} matches 1 unless block ~{x} ~{y} ~{z} {block_id}{block_state}{nbt} run scoreboard players set #structure.pass ffi.ribosome 0", x = x, y = y, z = z, block_id = block, block_state = block_state, nbt = nbt, target = config.scoreboard, objective = config.objective);
+			let line = format!("execute if score {target} {objective} matches 1 unless block ~{x} ~{y} ~{z} {block_id}{block_state}{nbt} run scoreboard players set {target} {objective} 0", x = x, y = y, z = z, block_id = block, block_state = block_state, nbt = nbt, target = config.scoreboard, objective = config.objective);
 
 			result.push(line);
 		}
