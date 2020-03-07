@@ -36,6 +36,20 @@ fn run() -> PResult<()> {
 				.takes_value(false),
 		)
 		.arg(
+			Arg::with_name("ignore nbt")
+				.short("n")
+				.long("ignore-nbt")
+				.help("Ignore NBT of blocks inside structure file")
+				.takes_value(false),
+		)
+		.arg(
+			Arg::with_name("ignore block state")
+				.short("b")
+				.long("ignore-block-state")
+				.help("Ignore Block State of blocks inside structure file")
+				.takes_value(false),
+		)
+		.arg(
 			Arg::with_name("target name")
 				.short("t")
 				.long("target")
@@ -65,6 +79,8 @@ fn run() -> PResult<()> {
 		let mut config = Config::default();
 
 		config.void = matches.is_present("void");
+		config.ignore_nbt = matches.is_present("ignore nbt");
+		config.ignore_block_state = matches.is_present("ignore block state");
 		if let Some(value) = matches.value_of("target name") {
 			config.set_scoreboard(value);
 		};

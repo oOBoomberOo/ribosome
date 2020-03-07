@@ -36,12 +36,12 @@ impl Structure {
 			let [x, y, z] = self.calculate_pos(block.pos, config);
 
 			let block_state = match palette.properties {
-				Some(states) => self.compile_block_state(&states),
-				None => String::default()
+				Some(states) if !config.ignore_block_state => self.compile_block_state(&states),
+				_ => String::default()
 			};
 			let nbt = match block.nbt.clone() {
-				Some(nbt) => self.compile_nbt(&nbt),
-				None => String::default()
+				Some(nbt) if !config.ignore_nbt => self.compile_nbt(&nbt),
+				_ => String::default()
 			};
 
 			let block = palette.name;

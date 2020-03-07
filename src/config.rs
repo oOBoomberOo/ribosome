@@ -3,7 +3,9 @@ pub struct Config {
 	pub void: bool,
 	pub scoreboard: String,
 	pub objective: String,
-	pub mode: Mode
+	pub mode: Mode,
+	pub ignore_nbt: bool,
+	pub ignore_block_state: bool
 }
 
 impl Default for Config {
@@ -12,7 +14,9 @@ impl Default for Config {
 			void: false,
 			scoreboard: "#structure.pass".to_string(),
 			objective: "ffi.ribosome".to_string(),
-			mode: Mode::default()
+			mode: Mode::default(),
+			ignore_nbt: false,
+			ignore_block_state: false
 		}
 	}
 }
