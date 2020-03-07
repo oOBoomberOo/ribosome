@@ -28,7 +28,7 @@ To ignore any air blocks inside structure file. (effectively turn air blocks int
 To ignore NBT data inside structure file completely.
 - Block State (`-b`, `--ignore-block-state`)  
 To ignore Block State inside structure file completely.
-- Mode (`-m [corner|center|center_top|center_bottom]`, `--mode [corner|center|center_top|center_bottom]`)  
+- Mode (`-m <mode>`, `--mode <mode>`)  
 Select the origin of structure, default to `corner`.
   - `corner`, the origin of structure is in the north-west most corner of structure file.
   - `center`, the origin of structure is at exactly the center of structure in all axis.
