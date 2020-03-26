@@ -36,5 +36,5 @@ Select the origin of structure, default to `corner`.
   - `center_bottom`, similar to `center` but the y-axis will be the bottom most block instead.
 - Target (`-t <name>`, `--target <name>`)  
 Change the scoreboard name of the outputed file, default to `#structure.pass`.
-- Objectuve (`-o <name>`, `--objective <name>`)  
+- Objective (`-o <name>`, `--objective <name>`)  
 Change the objective name of the outputed file, default to `ffi.ribosome`.
